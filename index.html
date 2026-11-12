@@ -40,7 +40,7 @@
   nav{position:sticky;top:0;z-index:20;border-bottom:1px dashed var(--line-2);backdrop-filter:blur(14px);background:rgba(0,0,0,.55)}
   nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
   .brand{display:flex;align-items:center;gap:14px;font-family:Archivo;font-size:20px}
-  .avatar{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#2a2a2a,#0b0b0b);border:1px solid var(--line-2);font-weight:600;font-size:20px}
+  .avatar{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#2a2a2a,#0b0b0b);border:1px solid var(--line-2);font-weight:600;font-size:20px;object-fit:cover;flex:none}
   .navlinks{display:flex;gap:28px;font-size:14px;color:var(--soft)}
   .navlinks a:hover{color:#fff}
   .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;font-size:14px;font-weight:500;transition:.25s}
@@ -194,7 +194,7 @@
 
 <nav>
   <div class="wrap">
-    <a href="#" class="brand"><span class="avatar">L</span>Lucas</a>
+    <a href="#" class="brand"><img class="avatar" src="profile.jpg" alt="Lucas" width="52" height="52">Lucas</a>
     <div class="navlinks">
       <a href="#projets">Projets</a>
       <a href="#services">Services</a>
